@@ -1,0 +1,79 @@
+# --- General ---
+
+# Ignore build artifacts and temporary files
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.tmp
+*.bak
+
+# Ignore system files
+Thumbs.db
+Desktop.ini
+
+# Ignore Visual Studio artifacts
+.vs/
+.vscode/
+*.suo
+*.user
+*.userprefs
+
+# Ignore JetBrains IDE files
+.idea/
+*.iml
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore temporary Windows files
+*.tmp
+*.temp
+
+# Ignore backup files
+*.bak
+~*
+
+# --- C# / .NET ---
+
+# Visual Studio folders
+bin/
+obj/
+.vscode/
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Rider / Visual Studio temporary files
+.vsconfig/
+
+# Test result directories
+TestResults/
+*.testresults
+
+# Coverage tools
+coverage/
+
+# dotnet CLI cache
+~/.microsoft/
+~/.dotnet/
+
+# ASP.NET Temporary Files
+ASP.NET/
+
+# --- Rust ---
+
+# Cargo Build Files
+/target/
+
+# Cargo lock file
+Cargo.lock
+
+# Generated binaries
+*.rs.bak
+
+# Rust tools and caches
+~/.cargo/
+~/.rustup/

@@ -1,0 +1,28 @@
+            //create_person_database();
+
+            // var name = "Alice";
+            // var personNamePtr = Marshal.StringToHGlobalAnsi(name);
+            // insert_person(3, personNamePtr);
+            // Marshal.FreeHGlobal(personNamePtr);
+
+            // read the db
+
+            // TODO: Place all dlls in group file.
+
+            // IntPtr dataPtr = read_user_db_query();
+
+            // if (dataPtr == IntPtr.Zero)
+            // {
+            //     Console.WriteLine("Rust function returned a null pointer.");
+            //     return;
+            // }
+
+            // string jsonData = Marshal.PtrToStringAnsi(dataPtr)!;
+            // if (string.IsNullOrEmpty(jsonData))
+            // {
+            //     Console.WriteLine("Received an empty JSON string.");
+            // }
+            // else
+            // {
+            //     Console.WriteLine($"JSON Data: {jsonData}");
+            // }
