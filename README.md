@@ -1,6 +1,48 @@
 # Test Assignment
 
-## Table of Contents
+## How to run?
+
+Git clone the project:
+
+`git clone https://github.com/derweisskrag/upgraded-lamp.git`
+
+Then using `cd`, you can go to the directory:
+
+`cd upgraded-lamp`
+
+After, go to C# directory 
+
+`cd src/solution_1` 
+
+Then run
+
+`dotnet restore`
+
+Build the project:
+
+`dotnet build`
+
+And run it:
+
+`dotnet run`
+
+If some DB issue:
+
+`dotnet-ef database upgrade`
+
+> NB! Please, notice that I have migration folder, so you should run the code without this command.
+
+### Tests
+
+Go to 
+
+`cd MoneyTests`
+
+and run
+
+`dotnet test`
+
+All tests should pass
 
 ## Description
 
