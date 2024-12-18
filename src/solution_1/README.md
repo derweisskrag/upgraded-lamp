@@ -299,10 +299,16 @@ In order to compare the performance and see which approach is the best, I will u
 
 ### Unittests
 
+For unit tests, I used XUnit and tested functions separately. Some functions are meant to be private, so we cannot test that easily.
+
+Usually, we just re-implement them as public in the testing directory (just like I did for one integration test)
 
 ### Integration tests
 
+For the integration test, I used a Database connection and compared the game result with data in the database to ensure it is correct. 
+I used the Async approach.
 
 ## Performance
 
+For performance, I used the BenchmarkDotNet package. The test revealed that my conversion function is fast. However, I have minor issue with assembly stuff even though the code is running just fine. All tests I wrote passed. Time of testing: 06:00-10:00. 
 
