@@ -4,6 +4,8 @@ using BrainLogic;
 using BrainLogic.Services;
 using App.Machine.Lib;
 using App.Machine.Session;
+using BenchmarkDotNet.Running;
+using App.Machine.Performance;
 
 namespace App.Machine{
     public class Machine {
@@ -33,6 +35,9 @@ namespace App.Machine{
            // initialize the app
            // TEST: You are Alice (I assume logged user!)
            machine.CreateConsoleMachine();
+
+           // Performance check
+           //var summary = BenchmarkRunner.Run<ExchangeRatePerformanceTest>();
         }
 
         private void SetUp(){
@@ -145,7 +150,9 @@ namespace App.Machine{
             Dictionary<string, int> CollectedData = slotMachineService.CollectedSpinsData;
             decimal WinnedInTotal = slotMachineService.TotalWin;
             decimal BetInTotal = slotMachineService.TotalBet;
-            decimal Profit = _userSession.StartMoney + WinnedInTotal;
+
+            // Final money in Alice / User
+            decimal Profit = _userSession.StartMoney;
 
             // Draw
             ReportStatistics(BetInTotal, WinnedInTotal, CollectedData, Profit);

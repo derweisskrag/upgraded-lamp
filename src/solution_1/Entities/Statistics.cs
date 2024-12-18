@@ -35,7 +35,7 @@ public class Statistics {
                         $"\n\t- Total Bet: {TotalBet}," +
                         $"\n\t- Total Win: {TotalWin}," +
                         $"\n\t- RTP: {RTP}" + 
-                        $"\n\t - Total Earned Money: {Profit}";
+                        $"\n\t - Current Balance: {Profit}";
 
         string collectedData = $"\n\nCollected Data:" +
                             $"\n\t- '777' was hit {SpinsData.GetValueOrDefault("777", 0)} times," +
