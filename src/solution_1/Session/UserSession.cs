@@ -1,5 +1,6 @@
 using System.Text;
 using App.Machine.Entities;
+using App.Machine.Error;
 using BrainLogic;
 
 namespace App.Machine.Session {
@@ -22,7 +23,7 @@ namespace App.Machine.Session {
             if(_user != null)
                 return _user;
             
-            throw new Exception("No user is logged!");
+            throw new UserSessionEmpty("No user is logged!");
         }
     }
 }
